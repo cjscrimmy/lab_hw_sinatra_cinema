@@ -15,9 +15,9 @@ get '/index' do
 end
 
 get '/film_info' do
-    @film_all = Film.all()
-    @all_titles = @film_all.map {|film| film.title}
-    @all_prices = @film_all.map {|film| film.price}
+    film_all = Film.all()
+    @all_titles = film_all.map {|film| film.title}
+    @all_prices = film_all.map {|film| film.price}
     erb(:film_info)
 end
 
