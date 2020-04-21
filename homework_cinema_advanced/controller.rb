@@ -11,7 +11,13 @@ also_reload('./models/*')
 get '/index' do
     @film_all = Film.all()
     @titles = @film_all.map {|film| film.title}
-    #@titles = @title_data.each {|film| film}
     erb(:index)
+end
+
+get '/film_info' do
+    @film_all = Film.all()
+    @all_titles = @film_all.map {|film| film.title}
+    @all_prices = @film_all.map {|film| film.price}
+    erb(:film_info)
 end
 

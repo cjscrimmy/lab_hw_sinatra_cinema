@@ -1,7 +1,12 @@
 body{
-    background-color: rgb(8, 68, 99);
+    background-color: rgb(86, 173, 216);
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     color: #ffffff;
     list-style-type: none;
+}
+a{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff; 
 }
